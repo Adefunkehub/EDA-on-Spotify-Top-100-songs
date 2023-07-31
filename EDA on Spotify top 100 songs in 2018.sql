@@ -1,3 +1,5 @@
+---Number of Appearances of artists on the chart
+
 SELECT artists,
         COUNT(artists) numberofapperance
 
@@ -8,7 +10,7 @@ SELECT artists,
          ORDER BY
          2 DESC
 
-
+---Are there more artists in the Top 100 with 'Lil' in their name, or with 'DJ' in their name?
 SELECT 
    'Lil' AS type,
 COUNT(DISTINCT artists) AS nberofartists 
